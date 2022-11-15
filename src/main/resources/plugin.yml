@@ -1,0 +1,62 @@
+name: TPAMS
+version: '${project.version}'
+main: com.github.white555gamer.tpams.TPAMS
+api-version: 1.19
+authors: [ WHERE_WHITE_(Twitter), WHITE555Gamer(Twitter & Github) ]
+description: TPAMS aims to be a multifunctional multi-spigot-server plugin.
+website: |
+  https://www.curseforge.com/minecraft/bukkit-plugins/tpams
+  https://github.com/WHITE555Gamer/Minecraft-TPAMS
+  https://twitter.com/WHITE555Gamer
+
+commands:
+  broadcastmessage:
+    aliases:
+      - bcmsg
+    usage: |
+      - /broadcastmessage < Message >
+    description: |
+      You can send any broadcast message.
+    permission: op
+    permission-message: 'ERROR: No Operator Permissions.'
+
+  fakemsg:
+    usage: |
+      /fakemsg < PlayerName >
+    description: |
+      You can send a fake message using the name of another user.
+    permission: op
+    permission-message: 'ERROR: No Operator Permissions.'
+
+  fly:
+    usage: |
+      /fly < PlayerName > < true | false | toggle | getboolean >
+    description: |
+      You can set/get the player flightable.
+    permission: op
+    permission-message: 'ERROR: No Operator Permissions.'
+
+  fly_speed:
+    usage: |
+      /fly_speed < PlayerName > < reset | set | min | max | add | sub | getspeed > < 0.1~1.0 >
+    description: |
+      You can set/get the player flight speed.
+    permission: op
+    permission-message: 'ERROR: No Operator Permissions.'
+
+
+
+permissions:
+  tpams.*:
+    description: Gives access to all TPAMS commands
+    children:
+      tpams.broadcastmessage: true
+
+
+
+    default: op
+
+    tpams.broadcastmessage:
+      description:
+      default:
+
