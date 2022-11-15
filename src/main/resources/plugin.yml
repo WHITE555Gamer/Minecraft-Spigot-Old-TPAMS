@@ -1,0 +1,64 @@
+name: TPAMS
+version: '${project.version}'
+main: msspl.tpams.TPAMS
+api-version: 1.18
+description: TPAMS for Multi-Spigot-Server
+
+commands:
+  classic_gamemode:
+    usage: /classic_gamemode < 0 | 1 | 2 | 3 | s | c | a | sp > < PlayerName >
+    description: You can set a gamemode using the old command.
+  fakemsg:
+    usage: /fakemsg < PlayerName > < MsgBody >
+    description: You can send a fake message using the name of another user.
+  fakename:
+    usage: /fakename < PlayerName > < fakename >
+    description: You can set a fake name using the name of another user.
+  fakename_reset:
+    usage: /fakename_reset < PlayerName >
+    description: You can reset a fake name.
+  fly:
+    usage: /fly < PlayerName > < true | false | toggle | getboolean >
+    description: You can set/get the player flightable.
+  fly_speed:
+    usage: /fly_speed < PlayerName > < reset | set | min | max | add | sub | getspeed > < 0.1~1.0 >
+    description: You can set/get the player flight speed.
+  walk_speed:
+    usage: /walk_speed < PlayerName > < reset | set | min | max | add | sub | getspeed > < 0.1~1.0 >
+    description: You can set/get the player walk speed.
+  health:
+    usage: /health < PlayerName > < set | kill | min | max | add | sub | gethealth > < 0 or more >
+    description: You can set|get the player health.
+
+  nickname:
+    usage: /nickname < PlayerName > < nickname >
+    description: You can set the player nickname.
+  nickname_reset:
+    usage: /nickname_reset < PlayerName >
+    description: You can reset the player nickname.
+
+  quick_fullfood:
+    usage: /quick_fullfood < PlayerName >
+    description: You can quick recover food point.
+  quick_fullhealth:
+    usage: /quick_fullhealth < PlayerName >
+    description: You can quick recover health point.
+  quick_recovery:
+    usage: /quick_recovery < PlayerName >
+    description: You can quick recover health and food point.
+
+  tpams_changelog:
+    usage: /tpams_changelog < Version > < Page >
+    description: You can see the TPAMS changelogs.
+  tpams_help:
+    usage: /tpams_help < TPAMS Commands >
+    description: You can see the TPAMS command help.
+  tpams_playerdata_debug:
+    usage: /tpams_playerdata_debug < PlayerName > < Commands >
+    description: You can set/get player data.
+  tpams_runningtest:
+    usage: /tpams_runningtest
+    description: You can get feedback when TPAMS is running.
+  tpams_serverdata_debug:
+    usage: /tpams_serverdata_debug < Commands >
+    description: You can set/get server data.
